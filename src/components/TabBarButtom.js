@@ -19,7 +19,7 @@ const TabBarButtom = () => {
 
   const tabItems = [
     {
-      key: '/home/index',
+      key: '/home',
       title: '首页',
       icon: <AppOutline />,
     },
