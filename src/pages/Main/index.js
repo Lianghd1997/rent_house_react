@@ -10,7 +10,7 @@ import {
   CompassOutline,
   PayCircleOutline,
 } from 'antd-mobile-icons';
-import "./index.css";
+import "./index.less";
 
 const SearchBox = () => {
   return (
