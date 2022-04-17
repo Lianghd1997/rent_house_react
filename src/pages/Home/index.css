@@ -1,0 +1,11 @@
+.home_content {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.tabbar_buttom {
+	flex: 0;
+	border-top: solid 1px var(--adm-border-color);
+}
