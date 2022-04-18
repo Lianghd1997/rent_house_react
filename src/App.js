@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import CityList from "./pages/CityList";
+import Map from "./pages/Map"
 
 function Redirect({ to }) {
   const navigate = useNavigate();
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Redirect to="/home" />}></Route>
           <Route path="/home/*" element={<Home />}></Route>
           <Route path="/citylist" element={<CityList />}></Route>
+          <Route path="/map" element={<Map />}></Route>
         </Routes>
       </div>
     </Router>

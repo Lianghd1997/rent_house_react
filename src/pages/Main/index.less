@@ -1,13 +1,28 @@
+@font-color: #333;
+
 .search_box {
   position: absolute;
   top: 30px;
   left: 50%;
-  width: 250px;
+  display: flex;
+  // width: 300px;
   transform: translateX(-50%);
   z-index: 99;
+  .search_box_citylist {
+    width: 60px;
+    text-align: center;
+    background-color: #fff;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    span {
+      margin-right: 5px;
+      line-height: 32px;
+      font-size: 14px;
+    }
+  }
 }
 
-.swiper_content {
+.swiper {
   width: 100%;
   height: 212px;
 
@@ -18,11 +33,13 @@
 }
 
 .nav_menu {
-  margin-top: 10px;
-  width: 100%;
-  height: 50px;
   display: flex;
   justify-content: space-around;
+  padding: 10px;
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  border-radius: 5px;
 
   .nav_menu_item {
     display: flex;
@@ -33,7 +50,80 @@
 
   .nav_menu_text {
     margin-top: 5px;
-    color: #333;
+    color: @font-color;
     font-weight: 900;
+  }
+}
+
+.groups {
+  padding: 15px;
+
+  .groups_title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+
+    h4 {
+      color: #ccc;
+    }
+  }
+
+  .groups_item {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #fff;
+
+    // height: 70px;
+    .groups_intro {
+      margin-top: 5px;
+      line-height: 20px;
+      color: @font-color;
+
+      div:first-child {
+        font-weight: 700;
+      }
+
+      div:last-child {
+        color: #ccc;
+        font-size: 12px;
+      }
+    }
+
+    img {
+      width: 30%;
+      // height: 100%;
+    }
+  }
+}
+
+.news {
+  padding: 15px;
+  background-color: #fff;
+
+  .news_content {
+    display: flex;
+    padding: 15px;
+    border-bottom: solid 2px rgb(241, 237, 237);
+    &:last-child {
+      border-bottom-color: transparent;
+    }
+
+    img {
+      width: 30%;
+    }
+
+    .news_desc {
+      padding: 0 15px;
+      position: relative;
+
+      .news_info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 35px;
+        color: #ccc;
+      }
+    }
   }
 }
